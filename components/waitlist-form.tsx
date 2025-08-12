@@ -58,8 +58,6 @@ export default function WaitlistForm() {
         }),
       })
 
-      const data = await response.json()
-
       if (response.ok) {
         setStatus("success")
         setMessage("Welcome to the waitlist! We'll be in touch soon.")
@@ -71,7 +69,7 @@ export default function WaitlistForm() {
         setStatus("error")
         setMessage("Something went wrong. Please try again.")
       }
-    } catch (error) {
+    } catch {
       setStatus("error")
       setMessage("Network error. Please check your connection.")
     } finally {
@@ -80,8 +78,8 @@ export default function WaitlistForm() {
   }
 
   return (
-    <div className="w-full max-w-md space-y-4">
-      <form onSubmit={handleSubmit} className="space-y-4" aria-label="Join waitlist form">
+    <div className="w-full max-w-sm xs:max-w-md space-y-3 xs:space-y-4">
+      <form onSubmit={handleSubmit} className="space-y-3 xs:space-y-4" aria-label="Join waitlist form">
         <div className="relative">
           <label htmlFor="email-input" className="sr-only">
             Email address for waitlist signup
@@ -92,7 +90,7 @@ export default function WaitlistForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Enter your email"
-            className="w-full px-6 py-4 bg-slate-900/70 border border-cyan-400/30 rounded-full text-slate-50 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-200"
+            className="w-full px-4 xs:px-6 py-3 xs:py-4 bg-slate-900/70 border border-cyan-400/30 rounded-full text-slate-50 placeholder-slate-400 text-sm xs:text-base focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:border-transparent transition-all duration-200"
             disabled={isSubmitting}
             aria-describedby={status !== "idle" ? "form-status" : undefined}
             aria-invalid={status === "error"}
@@ -104,7 +102,7 @@ export default function WaitlistForm() {
         <motion.button
           type="submit"
           disabled={isSubmitting}
-          className="w-full px-6 py-4 bg-cyan-500 hover:bg-cyan-400 disabled:bg-cyan-600 text-slate-900 font-semibold rounded-full shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
+          className="w-full px-4 xs:px-6 py-3 xs:py-4 bg-cyan-500 hover:bg-cyan-400 disabled:bg-cyan-600 text-slate-900 font-semibold rounded-full shadow-lg text-sm xs:text-base transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 focus:ring-offset-slate-900"
           whileTap={{ scale: 0.98 }}
           aria-describedby={status !== "idle" ? "form-status" : undefined}
         >

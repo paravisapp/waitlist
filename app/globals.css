@@ -147,3 +147,83 @@
     white-space: normal;
   }
 }
+
+/* Custom breakpoint for extra small screens */
+@media (min-width: 475px) {
+  .xs\:aspect-\[1\.4\/1\] {
+    aspect-ratio: 1.4/1;
+  }
+  
+  .xs\:h-6 {
+    height: 1.5rem;
+  }
+  
+  .xs\:h-9 {
+    height: 2.25rem;
+  }
+  
+  .xs\:h-14 {
+    height: 3.5rem;
+  }
+  
+  .xs\:w-12 {
+    width: 3rem;
+  }
+  
+  .xs\:w-14 {
+    width: 3.5rem;
+  }
+  
+  .xs\:p-5 {
+    padding: 1.25rem;
+  }
+  
+  .xs\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  
+  .xs\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  .xs\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  .xs\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  
+  .xs\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+  
+  .xs\:space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.5rem;
+  }
+  
+  .xs\:space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+  }
+  
+  .xs\:max-w-md {
+    max-width: 28rem;
+  }
+  
+  .xs\:tracking-widest {
+    letter-spacing: 0.1em;
+  }
+  
+  .xs\:block {
+    display: block;
+  }
+  
+  .xs\:hidden {
+    display: none;
+  }
+}

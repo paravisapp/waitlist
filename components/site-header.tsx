@@ -1,4 +1,5 @@
 import Link from "next/link"
+import ParavisLogo from "./paravis-logo"
 
 export default function SiteHeader() {
   return (
@@ -6,9 +7,15 @@ export default function SiteHeader() {
       <div className="flex justify-between items-center">
         <Link
           href="/"
-          className="text-2xl font-bold tracking-tight text-slate-50 hover:text-cyan-400 transition-colors"
+          className="hover:opacity-80 transition-opacity duration-200"
+          aria-label="Paravis - Banking Without Borders"
         >
-          PARAVIS
+          <ParavisLogo 
+            width={140} 
+            height={35}
+            priority={true}
+            className="h-8 w-auto"
+          />
         </Link>
       </div>
     </header>

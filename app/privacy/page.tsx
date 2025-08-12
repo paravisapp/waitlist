@@ -73,10 +73,10 @@ export default function PrivacyPage() {
               <p className="text-slate-300 leading-relaxed">
                 For privacy-related questions, data deletion requests, or any concerns, contact us at:{" "}
                 <a 
-                  href="mailto:support@paravis.app" 
+                  href="mailto:paravisapp@gmail.com" 
                   className="text-cyan-400 hover:text-cyan-300 underline"
                 >
-                  support@paravis.app
+                  paravisapp@gmail.com
                 </a>
               </p>
             </section>

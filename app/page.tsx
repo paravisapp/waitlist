@@ -14,9 +14,10 @@ export default function HomePage() {
           xmlns="http://www.w3.org/2000/svg"
           role="img"
           aria-label="Decorative circuit pattern background"
+          suppressHydrationWarning={true}
         >
           <defs>
-            <pattern id="circuit" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <pattern id="circuit-bg" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
               <path
                 d="M10 10h80v80h-80z M30 30h40v40h-40z M50 10v20 M50 70v20 M10 50h20 M70 50h20"
                 stroke="currentColor"
@@ -25,7 +26,7 @@ export default function HomePage() {
               />
             </pattern>
           </defs>
-          <rect width="100%" height="100%" fill="url(#circuit)" />
+          <rect width="100%" height="100%" fill="url(#circuit-bg)" />
         </svg>
       </div>
 

@@ -143,7 +143,7 @@ html {
               "contactPoint": {
                 "@type": "ContactPoint",
                 "contactType": "Customer Service",
-                "email": "support@paravis.app"
+                "email": "paravisapp@gmail.com"
               },
               "sameAs": [
                 "https://twitter.com/paravis"
