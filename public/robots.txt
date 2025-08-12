@@ -1,0 +1,26 @@
+# Robots.txt for Paravis
+
+User-agent: *
+Allow: /
+
+# AI and crawler specific instructions
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Bard
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Sitemap location
+Sitemap: https://paravis.app/sitemap.xml
+
+# Crawl delay for courtesy
+Crawl-delay: 1
